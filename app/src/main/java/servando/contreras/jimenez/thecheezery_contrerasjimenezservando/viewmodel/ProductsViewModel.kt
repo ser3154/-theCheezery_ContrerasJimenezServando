@@ -6,7 +6,7 @@ import servando.contreras.jimenez.thecheezery_contrerasjimenezservando.data.Cate
 import servando.contreras.jimenez.thecheezery_contrerasjimenezservando.data.ProductsRepository
 
 class ProductsViewModel(savedStateHandle: SavedStateHandle): ViewModel(){
-    private val category = Category.valueOf(checkNotNull(savedStateHandle.get<String>("Category")))
+    private val category = Category.valueOf(checkNotNull(savedStateHandle.get<String>("category")))
 
     val title: String = category.title
     val products = ProductsRepository.getByCategory(category)

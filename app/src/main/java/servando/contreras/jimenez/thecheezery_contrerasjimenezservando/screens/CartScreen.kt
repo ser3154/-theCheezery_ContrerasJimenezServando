@@ -58,7 +58,7 @@ fun CartScreen(cartViewModel: CartViewModel){
                         Text(product.name, fontSize = 20.sp, color = Color.DarkGray, modifier = Modifier.weight(1f))
                         Text("\$${product.price}", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Very_purple)
                        IconButton(onClick = {cartViewModel.removeAt(index)}) {
-                           Icon(painterResource(R.drawable.delete), contentDescription = "Eliminar")
+                           Icon(painterResource(R.drawable.delete), contentDescription = "Eliminar", tint = Pinky)
                        }
                     }
                 }
